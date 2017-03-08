@@ -16,5 +16,7 @@ Don't forget to add your rule
     <logger name="*" minlevel="Debug" writeTo="h" />
 
 ![hipchat](https://s16.postimg.org/608xjfv5x/hipchat.png)
+
+![hipchat2](https://s1.postimg.org/h46spj2db/hipchat2.png)
 ----------
 
