@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NLog.Hipchat</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Saulo Tsuchida</authors>
+    <owners>Saulo Tsuchida</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>https://github.com/smashraid/NLog.Hipchat</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>HipChat target for NLog.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>NLog HipChat</tags>
+  </metadata>
+</package>
