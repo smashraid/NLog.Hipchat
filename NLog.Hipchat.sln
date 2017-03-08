@@ -5,8 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.Hipchat", "NLog.Hipchat\NLog.Hipchat.csproj", "{0E56136C-1448-4788-A5A3-1BE7DBBA3A0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{16DB4328-20DD-4A02-8B68-A86FA2306489}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{0E56136C-1448-4788-A5A3-1BE7DBBA3A0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0E56136C-1448-4788-A5A3-1BE7DBBA3A0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0E56136C-1448-4788-A5A3-1BE7DBBA3A0B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16DB4328-20DD-4A02-8B68-A86FA2306489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16DB4328-20DD-4A02-8B68-A86FA2306489}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16DB4328-20DD-4A02-8B68-A86FA2306489}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16DB4328-20DD-4A02-8B68-A86FA2306489}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

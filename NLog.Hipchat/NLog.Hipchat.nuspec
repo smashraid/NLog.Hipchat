@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>NLog.Hipchat</id>
+    <id>NLog.HipchatCard</id>
     <version>$version$</version>
     <title>$title$</title>
     <authors>Saulo Tsuchida</authors>
@@ -10,8 +10,8 @@
     <projectUrl>https://github.com/smashraid/NLog.Hipchat</projectUrl>
     <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>HipChat target for NLog.</releaseNotes>
+    <description>HipChat target for NLog.</description>
+    <releaseNotes>Add target for HipChat</releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>NLog HipChat</tags>
   </metadata>
