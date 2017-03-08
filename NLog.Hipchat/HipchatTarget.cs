@@ -22,16 +22,9 @@ namespace NLog.Hipchat
         [RequiredParameter]
         public string RoomId { get; set; }
         [RequiredParameter]
-        public string Style { get; set; }
-        [RequiredParameter]
         public string Host { get; set; }
         public string Site { get; set; }
         public string Icon { get; set; }
-        public string ExpandMessage { get; set; }
-        public string Thumbnail { get; set; }
-        public string ThumbnailWidth { get; set; }
-        public string ThumbnailHeight { get; set; }
-        public bool Activity { get; set; }
 
         protected override void Write(LogEventInfo logEvent)
         {
@@ -54,18 +47,13 @@ namespace NLog.Hipchat
         private string BuildLog(LogEventInfo item)
         {
             JObject json = new JObject();
-            json["message"] = item.Message;            
+            json["message"] = item.Message;
             json["card"] = new JObject();
-            json["card"]["style"] = Style;
+            json["card"]["style"] = "application";
             json["card"]["url"] = Site;
             json["card"]["format"] = "medium";
             json["card"]["id"] = Guid.NewGuid();
             json["card"]["title"] = item.Message;
-            if (Activity)
-            {
-                json["card"]["activity"] = new JObject();
-                json["card"]["activity"]["html"] = "This is a notification about <b>an object</b>";
-            }
             if (item.Exception != null)
             {
                 json["card"]["description"] = item.Exception.Message;
@@ -99,14 +87,6 @@ namespace NLog.Hipchat
                 }
             }
             json["card"]["attributes"] = attributes;
-            if (!string.IsNullOrEmpty(Thumbnail))
-            {
-                json["thumbnail"] = new JObject();
-                json["thumbnail"]["url"] = Thumbnail;
-                json["thumbnail"]["url@2x"] = Thumbnail;
-                json["thumbnail"]["width"] = ThumbnailWidth;
-                json["thumbnail"]["height"] = ThumbnailHeight;
-            }
             return json.ToString();
         }
 
